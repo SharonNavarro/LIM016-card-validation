@@ -8,24 +8,148 @@
   </head>
 
   <body>
-    <header>
-      <div> id:Inicio </div>
-      <h1>Validacion de tarjeta de credito</h1>
-
-      <h2>Ingresa tu numero de tarjeta!</h2>
+    <center>
+    <header> 
+    
+     <div class="titulo"> 
+       <h1 class="theAkkunCloset">THE AKKUN CLOSET</h1><br>
+    </div>
+        
+        
+      <div id="introduccionUno" class="introduccion2">
+           <h2 class="bienvenida">¡Bienvenidx al closet de Akkun!</h2>
+           <h2 class="solicitud"> Aquí encontrarás prendas exclusivas, pero antes, queremos saber quién eres.:)</h2>
+        
+        <div id="nombreDataUno" class="nombredata2">
+           <label for="nombre"> Soy... </label>
+          <input type="text" id="nombre" autocomplete="off">
+          <button class="efectoBoton" onclick="leerNombre()"> Hazme click </button>
+        </div>
+        </div>
+        
       
-<h3>Holaaa</h3>
-
-    </header>
-    <main>
-
-    </main>
-    <footer>
-
-    </footer>
-
-    <script src="index.js" type="module"></script>
-  </body>
+        </he>
+        <main>
+        
+          
+        <div id="elegirOpcion" class="elegirOpcion2" style="display:none" >
+          <h2 id="elige" class="elige2">ELIGE</h2>
+          
+          <div id="alinacion" class="alinacion2">
+          <button onclick="opcion1()" id="btn1" class="efectoBoton"  ></button>
+            <p  id="vestido">Vestido Hina - $300 </p>
+          <button  onclick="opcion2()" id="btn2" class="efectoBoton" ></button>
+            <p id="traje">Traje Ackerman - $100 </p>
+          <button onclick="opcion3()" id="btn3" class="efectoBoton" ></button>
+            <p id="kimono">Kimono Draken - $50 </p>
+          </div>
+          
+        <div>
+          <button id="inicio" class="inicio2" onclick="inicio()"> Inicio </button>
+        </div>
+          </div>
+          </center>
+          
+      
+      <div id="vestidoHina" style="display:none" ><center>
+        <h2 id="indicación" class="indicación2">INGRESA</h2></center>
+          
+        <button onclick="" id="btn1"> </button>
+        <p id="vestido"> Vestido Hina - $300 </p> 
+          
+          <div id="cajaDeInfo">
+         <center> <label for="nroTarjeta">N° de tarjeta:</label><br>
+          <input type="number" autocomplete="cc-number" id=numerodata>
+          <button class="radio" onclick="validarTarjeta()">Ingresar</button>
+           </div>
+            
+            <center>
+            <div id="resultadoPositivo" style="display:none"> 
+              <h3 id="msjPositivo">RESULTADO POSITIVO</h3>
+               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+              </div>
+              
+            <div id="resultadoNegativo" style="display:none">
+              <h3 id="msjNegativo">RESULTADO NEGATIVO</h3>
+               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+              </div>
+            </center>
+          
+            <div><br><center>
+              <button id="inicio" onclick="inicio()">Inicio </button></center>
+            </div>
+            </div>
+            
+            
+        <div id="trajeAckerman" style="display:none"><center>
+        <h2 id="indicación" class="indicación2">INGRESA</h2></center>
+          
+        <button onclick="" id="btn2"> </button>
+        <p id="traje"> Traje Ackerman - $100 </p> 
+          
+          <div id="cajaDeInfo">
+         <center> <label for="nroTarjeta">N° de tarjeta:</label><br>
+          <input type="number" max="9" required="" autocomplete="cc-number" id=numerodata>
+          <button class="radio" onclick="validarTarjeta()">Ingresar</button>
+           </div>
+            
+            <center>
+            <div id="resultadoPositivo"style="display:none"> 
+              <h3 id="msjPositivo">RESULTADO POSITIVO</h3>
+               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+              </div>
+              
+            <div id="resultadoNegativo" style="display:none">
+              <h3 id="msjNegativo">RESULTADO NEGATIVO</h3>
+               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+              </div>
+            </center>
+          
+            <div><br><center>
+              <button id="inicio" onclick="inicio()">Inicio </button></center>
+           </div>
+          </div>
+            
+          
+           <div id="kimonoDraken" style="display:none"><center>
+        <h2 id="indicación" class="indicación2">INGRESA</h2></center>
+          
+        <button onclick="" id="btn3"> </button>
+        <p id="kimono"> Kimono Draken - $50 </p> 
+          
+          <div id="cajaDeInfo">
+         <center> <label for="nroTarjeta">N° de tarjeta:</label><br>
+          <input type="number" max="9" required="" autocomplete="cc-number" id=numerodata>
+          <button class="radio" onclick="validarTarjeta()">Ingresar</button>
+           </div>
+            
+            <center>
+            <div id="resultadoPositivo"style="display:none" > 
+              <h3 id="msjPositivo">RESULTADO POSITIVO</h3>
+               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+              </div>
+              
+            <div id="resultadoNegativo" style="display:none">
+              <h3 id="msjNegativo">RESULTADO NEGATIVO</h3>
+               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+              </div>
+            </center>
+          
+            <div><br><center>
+              <button id="inicio" onclick="inicio()">Inicio </button></center>
+           </div>
+          </div>
+          
+      </main>
+      </body>
+          
+      <footer><center>
+        <p>© 2021 Akkun Co.</p>
+        <p> Copyright - Todos los derechos reservados.</p>
+        <a href="">Instagram</a>
+        <a href="">Facebook</a>
+        <a href="">Twitter</a>
+        </footer></center>
 
 
 </html>
