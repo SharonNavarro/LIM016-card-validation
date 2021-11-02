@@ -1,24 +1,38 @@
-#btn1{
+body {
+  background: linear-gradient(to bottom, rgba(255,0,0,0), rgb(98, 28, 190));
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;}
+
+  #btnVestido{
     background-image: url(https://i.pinimg.com/564x/4b/a5/f2/4ba5f2d7f2748475d29cdffa148e600c.jpg);
     width: 300px ;
     height: 420px ;
     background-position: right;
     background-size: contain;}
+
+    #mostrarVestido{
+      background-image: url(https://i.pinimg.com/564x/4b/a5/f2/4ba5f2d7f2748475d29cdffa148e600c.jpg);
+      width: 300px ;
+      height: 420px ;
+      background-position: right;
+      background-size: contain;}
   
-   #btn2{
+   #btnTraje{
      position: left ;
       background-image: url(https://i.pinimg.com/564x/d4/59/30/d45930ec5ea98f9689088301e31a651e.jpg);
     width: 278px ;
     height: 420px ;
     background-position: center ;
     background-size: contain;}
-    
-  #btn3{
-    background-image: url(https://i.pinimg.com/564x/e9/69/5f/e9695fa1c26343b9e459a5082641212c.jpg);
-    width: 389px ;
-    height: 420px ;
-    background-position: right;
-    background-size: contain;}    
+
+    #mostrarTraje{
+      position: left ;
+       background-image: url(https://i.pinimg.com/564x/d4/59/30/d45930ec5ea98f9689088301e31a651e.jpg);
+     width: 278px ;
+     height: 420px ;
+     background-position: center ;
+     background-size: contain;}
     
    #alinacion{
      display: flex;}
@@ -28,7 +42,75 @@
   
   #traje {
     align-self: flex-end;}
-  
-  #kimono {
-    align-self: flex-end;}
-  
+
+  .titulo {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 35px;
+    text-align: center;
+    border-style: groove;
+    border-color: black;
+    border-width: 4px;
+    /*background-color: rgb(120, 61, 196);*/
+    margin-top: 60px;
+  }  
+
+  .bienvenida {
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 75px;
+    line-height: 0pc;
+  }
+
+  .nombredata2 {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin-top: 60px ;
+  }
+
+  #nombre {
+    padding: 4px 14px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out;
+    }
+    #nombre:focus {
+      width: 20%;
+    }
+
+    .efectoBoton {
+    border-radius: 15px;
+    padding: 5px 10px;
+    color: rgb(0, 0, 0) ;
+    font-size: 12px;
+    }
+    .efectoBoton:hover{
+      background: #00000077;
+      box-shadow: 0 0 10px #000000, 0 0 60px #000000, 0 0 15px #000000;
+    }
+
+.elige2 {
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  font-size: 32px;
+  text-align: center;
+  /*margin-top: 48px;*/
+  line-height: 5pc;
+}
+
+.alinacion2 {
+  margin-left: 18pc;
+}
+
+
+
+
+
+  .footer {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    background-color: rgb(128, 75, 197);
+    padding: 0px;
+  }

@@ -4,152 +4,122 @@
   <head>
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@448&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <center>
     <header> 
     
      <div class="titulo"> 
-       <h1 class="theAkkunCloset">THE AKKUN CLOSET</h1><br>
+       <h1 class="theAkkunCloset">THE AKKUN CLOSET</h1>
     </div>
         
         
       <div id="introduccionUno" class="introduccion2">
-           <h2 class="bienvenida">¡Bienvenidx al closet de Akkun!</h2>
-           <h2 class="solicitud"> Aquí encontrarás prendas exclusivas, pero antes, queremos saber quién eres.:)</h2>
+           <p class="bienvenida">¡Bienvenidx al closet de Akkun!<p>
+           <p class="bienvenida"> Aquí encontrarás prendas exclusivas, pero antes, queremos saber quién eres.:)</p>
         
         <div id="nombreDataUno" class="nombredata2">
            <label for="nombre"> Soy... </label>
           <input type="text" id="nombre" autocomplete="off">
-          <button class="efectoBoton" onclick="leerNombre()"> Hazme click </button>
+          <!--se aplica el addevenlistener°-->
+          <button id="botonVerificarNombre" class="efectoBoton" > Hazme click </button>
         </div>
         </div>
         
       
-        </he>
+    </header>
         <main>
         
           
         <div id="elegirOpcion" class="elegirOpcion2" style="display:none" >
-          <h2 id="elige" class="elige2">ELIGE</h2>
+          <h2 id="elige" class="elige2"></h2>
           
           <div id="alinacion" class="alinacion2">
-          <button onclick="opcion1()" id="btn1" class="efectoBoton"  ></button>
-            <p  id="vestido">Vestido Hina - $300 </p>
-          <button  onclick="opcion2()" id="btn2" class="efectoBoton" ></button>
-            <p id="traje">Traje Ackerman - $100 </p>
-          <button onclick="opcion3()" id="btn3" class="efectoBoton" ></button>
-            <p id="kimono">Kimono Draken - $50 </p>
-          </div>
+             <!--se aplica el addevenlistener°-->
+          <button id="btnVestido" class="efectoBoton"  ></button>
+            <p  id="itemVestido">Vestido Hina - $300 </p>
+             <!--se aplica el addevenlistener°-->
+          <button id="btnTraje" class="efectoBoton" ></button>
+            <p id="itemTraje">Traje Ackerman - $100 </p>
+          </div> 
+        </div>       
+
           
-        <div>
-          <button id="inicio" class="inicio2" onclick="inicio()"> Inicio </button>
-        </div>
-          </div>
-          </center>
-          
-      
-      <div id="vestidoHina" style="display:none" ><center>
-        <h2 id="indicación" class="indicación2">INGRESA</h2></center>
-          
-        <button onclick="" id="btn1"> </button>
+      <div id="vestidoHina" style="display:none" >     
+        <h2 id="indicaciónVestido" class="indicación2">INGRESA</h2>
+        <button id="mostrarVestido"> </button>
         <p id="vestido"> Vestido Hina - $300 </p> 
           
-          <div id="cajaDeInfo">
-         <center> <label for="nroTarjeta">N° de tarjeta:</label><br>
-          <input type="number" autocomplete="cc-number" id=numerodata>
-          <button class="radio" onclick="validarTarjeta()">Ingresar</button>
-           </div>
+        <!--<form id="formularioTarjetaV">-->
+          <div id="cajaDeInfoVestido">
+          <label for="nroTarjeta">N° de tarjeta:</label><br>
+          <input autocomplete="cc-number" id="numerodataVestido">
+           <!--se aplica el addevenlistener°-->
+          <button class="radio" id="ingresarNumeroVestido" > Ingresar </button>
+      </div>
+      <!--</form>-->
             
-            <center>
-            <div id="resultadoPositivo" style="display:none"> 
-              <h3 id="msjPositivo">RESULTADO POSITIVO</h3>
-               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+            <div id="resultadoPositivoV" style="display:none"> 
+              <h3 id="msjPositivoV">RESULTADO POSITIVO</h3>
+               <!--se aplica el addevenlistener-->
               </div>
               
-            <div id="resultadoNegativo" style="display:none">
-              <h3 id="msjNegativo">RESULTADO NEGATIVO</h3>
-               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+            <div id="resultadoNegativoV" style="display:none">
+              <h3 id="msjNegativoV">RESULTADO NEGATIVO</h3>
+               <!--se aplica el addevenlistener°-->
+               <button id="intentarVestido" >Volver a intentarlo</button>
               </div>
-            </center>
-          
-            <div><br><center>
-              <button id="inicio" onclick="inicio()">Inicio </button></center>
-            </div>
-            </div>
+             </div>
             
             
-        <div id="trajeAckerman" style="display:none"><center>
-        <h2 id="indicación" class="indicación2">INGRESA</h2></center>
+        <div id="trajeAckerman" style="display:none">
+        <h2 id="indicaciónTraje" class="indicación2">INGRESA</h2>
           
-        <button onclick="" id="btn2"> </button>
+        <button id="mostrarTraje"> </button>
         <p id="traje"> Traje Ackerman - $100 </p> 
           
-          <div id="cajaDeInfo">
-         <center> <label for="nroTarjeta">N° de tarjeta:</label><br>
-          <input type="number" max="9" required="" autocomplete="cc-number" id=numerodata>
-          <button class="radio" onclick="validarTarjeta()">Ingresar</button>
+       <!-- <form id="formularioTarjetaT">-->
+          <div id="cajaDeInfoTraje">
+          <label for="nroTarjeta">N° de tarjeta:</label><br>
+          <input autocomplete="cc-number" id="numerodataTraje">
+           <!--se aplica el addevenlistener°-->
+          <button class="radio" id="ingresarNumeroTraje">Ingresar</button>
            </div>
+           <!--</form>-->
             
-            <center>
-            <div id="resultadoPositivo"style="display:none"> 
-              <h3 id="msjPositivo">RESULTADO POSITIVO</h3>
-               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
+            <div id="resultadoPositivoT" style="display:none" > 
+              <h3 id="msjPositivoT">RESULTADO POSITIVO</h3>
               </div>
               
-            <div id="resultadoNegativo" style="display:none">
-              <h3 id="msjNegativo">RESULTADO NEGATIVO</h3>
-               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
-              </div>
-            </center>
-          
-            <div><br><center>
-              <button id="inicio" onclick="inicio()">Inicio </button></center>
-           </div>
+            <div id="resultadoNegativoT" style= "display:none" >
+              <h3 id="msjNegativoT">RESULTADO NEGATIVO</h3>
+               <!--se aplica el addevenlistener-->
+               <button id="intentarTraje">Volver a intentarlo</button>
+            </div>
           </div>
+          
+              <div>
+                <!--se aplica el addevenlistener°-->
+               <button id="inicio" class="inicio2" style="display:none" > Inicio </button>
+             </div>
             
-          
-           <div id="kimonoDraken" style="display:none"><center>
-        <h2 id="indicación" class="indicación2">INGRESA</h2></center>
-          
-        <button onclick="" id="btn3"> </button>
-        <p id="kimono"> Kimono Draken - $50 </p> 
-          
-          <div id="cajaDeInfo">
-         <center> <label for="nroTarjeta">N° de tarjeta:</label><br>
-          <input type="number" max="9" required="" autocomplete="cc-number" id=numerodata>
-          <button class="radio" onclick="validarTarjeta()">Ingresar</button>
-           </div>
-            
-            <center>
-            <div id="resultadoPositivo"style="display:none" > 
-              <h3 id="msjPositivo">RESULTADO POSITIVO</h3>
-               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
-              </div>
-              
-            <div id="resultadoNegativo" style="display:none">
-              <h3 id="msjNegativo">RESULTADO NEGATIVO</h3>
-               <button id="btnIntentarlo" onclick="volverIntentarlo()">Volver a intentarlo</button>
-              </div>
-            </center>
-          
-            <div><br><center>
-              <button id="inicio" onclick="inicio()">Inicio </button></center>
-           </div>
-          </div>
           
       </main>
-      </body>
+      <script src="index.js" type="module"></script>
           
-      <footer><center>
+      <div class="footer">
+      <footer>
         <p>© 2021 Akkun Co.</p>
         <p> Copyright - Todos los derechos reservados.</p>
         <a href="">Instagram</a>
         <a href="">Facebook</a>
         <a href="">Twitter</a>
-        </footer></center>
+        </footer>
+        </div>
 
-
+      </body>
 </html>
