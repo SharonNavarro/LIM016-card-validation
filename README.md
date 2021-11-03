@@ -15,11 +15,9 @@ Mi proyecto se trata sobre una página web, con la temática de una tienda de ro
 
 ## 2. Imagen final
 
-* <img src=>
+*  <img src="/PrototipoBajaFidelidad.jpg">
 * [imagen 1](blob:https://web.whatsapp.com/edff9161-633a-4bd3-8a72-92a013ff39ad)
-* [imagen 2](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
-* [imagen 3](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
-* [imagen 4](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
+
 
 En este proyecto tendrás que construir una aplicación web que le permita a un
 usuario validar el número de una tarjeta de crédito. Además, tendrás que
