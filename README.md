@@ -41,7 +41,7 @@ Mi proyecto se trata sobre una página web, con la temática de una tienda de ro
 ### Prototipo de Baja Fidelidad
 
 *
-<img src="/imagenes/PrototipoBajaFidelidad.jng" alt="Prototipo en papel"/>
+<img src="/imagenes/PrototipoBajaFidelidad.png" alt="Prototipo en papel"/>
 
 ### Feedback
 
@@ -56,7 +56,7 @@ Mi proyecto se trata sobre una página web, con la temática de una tienda de ro
 ### Prototipo Final
 
 *
-<img src="/imagenes/PrototipoFinalizado.jng" alt="Prototipo finalizado"/>
+<img src="/imagenes/PrototipoFinalizado.png" alt="Prototipo finalizado"/>
 
 
 
