@@ -4,20 +4,34 @@ body {
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;}
 
+
   #btnVestido{
     background-image: url(https://i.pinimg.com/564x/4b/a5/f2/4ba5f2d7f2748475d29cdffa148e600c.jpg);
     width: 300px ;
     height: 420px ;
     background-position: right;
-    background-size: contain;}
+    background-size: contain;
+  }
+    .btnVestido:hover{
+      border-radius: 8px;
+      box-shadow: 0 0 10px #ffffff, 0 0 60px #ffffff, 0 0 15px #ffffff;
+      }
+
 
     #mostrarVestido{
       background-image: url(https://i.pinimg.com/564x/4b/a5/f2/4ba5f2d7f2748475d29cdffa148e600c.jpg);
       width: 300px ;
       height: 420px ;
-      background-position: right;
-      background-size: contain;}
+      background-position: center;
+      background-size: contain;
+      margin-left: 32pc;
+    }
+      #mostrarVestido:hover {
+        border-radius: 8px;
+        box-shadow: 0 0 10px #ffffff, 0 0 60px #ffffff, 0 0 15px #ffffff;
+      }
   
+
    #btnTraje{
      position: left ;
       background-image: url(https://i.pinimg.com/564x/d4/59/30/d45930ec5ea98f9689088301e31a651e.jpg);
@@ -25,6 +39,11 @@ body {
     height: 420px ;
     background-position: center ;
     background-size: contain;}
+    .btnTraje:hover {
+      border-radius: 8px;
+      box-shadow: 0 0 10px #d6125d, 0 0 60px #d6125d, 0 0 15px #d6125d;
+    }
+
 
     #mostrarTraje{
       position: left ;
@@ -32,16 +51,26 @@ body {
      width: 278px ;
      height: 420px ;
      background-position: center ;
-     background-size: contain;}
+     background-size: contain;
+     margin-left: 32pc;
+    }
+     #mostrarTraje:hover {
+      border-radius: 8px;
+      box-shadow: 0 0 10px #d6125d, 0 0 60px #d6125d, 0 0 15px #d6125d;
+     }
     
-   #alinacion{
+
+  #alinacion{
      display: flex;}
   
+
   #vestido {
     align-self: flex-end;}
   
+
   #traje {
     align-self: flex-end;}
+
 
   .titulo {
     font-family: 'Josefin Sans', sans-serif;
@@ -50,9 +79,9 @@ body {
     border-style: groove;
     border-color: black;
     border-width: 4px;
-    /*background-color: rgb(120, 61, 196);*/
     margin-top: 60px;
   }  
+
 
   .bienvenida {
     font-family: 'Arimo', sans-serif;
@@ -63,11 +92,13 @@ body {
     line-height: 0pc;
   }
 
+
   .nombredata2 {
     font-family: 'Rubik', sans-serif;
     text-align: center;
     margin-top: 60px ;
   }
+
 
   #nombre {
     padding: 4px 14px;
@@ -78,6 +109,7 @@ body {
     #nombre:focus {
       width: 20%;
     }
+
 
     .efectoBoton {
     border-radius: 15px;
@@ -90,6 +122,7 @@ body {
       box-shadow: 0 0 10px #000000, 0 0 60px #000000, 0 0 15px #000000;
     }
 
+
 .elige2 {
   font-family: 'Arimo', sans-serif;
   font-weight: bold;
@@ -99,15 +132,110 @@ body {
   line-height: 5pc;
 }
 
+
 .alinacion2 {
   margin-left: 18pc;
 }
 
 
+#itemVestido, #itemTraje {
+  font-family: 'Orbitron', sans-serif;
+}
 
 
+.indicación2 {
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  /*margin-top: 48px;*/
+  line-height: 3pc;
+}
 
-  .footer {
+
+#vestido, #traje {
+  font-family: 'Orbitron', sans-serif; 
+  text-align: center;
+}
+
+
+#cajaDeInfoVestido, #cajaDeInfoTraje {
+  font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin-top: 0pc;
+    margin-bottom: 0pc ;
+}
+#numerodataVestido, #numerodataTraje { 
+  padding: 4px 14px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border-color: black;
+}
+
+
+#msjPositivoV, #msjPositivoT {
+  font-family: 'Arimo', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 26pc;
+  line-height: 3pc;
+  width: 32pc;
+  border-style: groove;
+  border-color: black;
+  border-width: 3px;
+  background-color: rgb(80, 255, 118);
+} 
+#msjNegativoV, #msjNegativoT {
+  font-family: 'Arimo', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  margin-left: 26pc;
+  line-height: 3pc;
+  width: 32pc;
+  border-style: groove;
+  border-color: black;
+  border-width: 3px;
+  background-color: rgb(255, 92, 80);
+}
+
+
+#intentarVestido, #intentarTraje {
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 14px;
+  margin-left: 36pc;
+  margin-top: 1pc;
+  margin-bottom: 0pc;
+  width: 14%;
+}
+
+
+.radio {
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 12px;
+  margin-top: 1pc;
+  margin-bottom: 1pc;
+  width: 6%;
+}
+.radio:hover{
+  background: #00000077;
+  box-shadow: 0 0 10px #000000, 0 0 60px #000000, 0 0 15px #000000;
+}
+
+
+.inicio2 {
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 18px;
+  margin-left: 37.5pc;
+  margin-top: 2pc;
+  margin-bottom: 2pc;
+  width: 10%;
+}
+
+
+.footer {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     text-align: center;
