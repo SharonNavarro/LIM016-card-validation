@@ -15,7 +15,7 @@ Mi proyecto se trata sobre una página web, con la temática de una tienda de ro
 
 ## 2. Imagen final
 
- *![Optional Text](../imagenes/P1.png)
+ * <img src="/imagenes/P1.png" alt="Parte uno"/>
 
  *
 
